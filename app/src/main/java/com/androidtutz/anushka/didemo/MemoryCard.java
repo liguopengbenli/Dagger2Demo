@@ -1,7 +1,9 @@
 package com.androidtutz.anushka.didemo;
 
-public class MemoryCard {
+import javax.inject.Inject;
 
+public class MemoryCard {
+    @Inject
     public MemoryCard() {
     }
 }

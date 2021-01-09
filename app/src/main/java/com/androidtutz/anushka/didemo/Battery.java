@@ -2,9 +2,7 @@ package com.androidtutz.anushka.didemo;
 
 import javax.inject.Inject;
 
-public class Battery {
+public interface Battery {
 
-    @Inject
-    public Battery() {
-    }
+  void showType();
 }

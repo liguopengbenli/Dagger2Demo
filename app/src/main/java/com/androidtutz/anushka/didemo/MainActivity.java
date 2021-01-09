@@ -16,8 +16,5 @@ public class MainActivity extends AppCompatActivity {
         smartPhone = smartPhoneComponent.getSmartPhone();
 
         smartPhone.makeACall();
-
-
-
     }
 }

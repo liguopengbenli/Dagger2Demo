@@ -8,6 +8,6 @@ public class SIMCard {
 
     @Inject
     public SIMCard(ServiceProvider serviceProvider) {
-        this.serviceProvider=serviceProvider;
+        this.serviceProvider = serviceProvider;
     }
 }

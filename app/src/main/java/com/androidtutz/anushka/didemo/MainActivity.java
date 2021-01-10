@@ -4,7 +4,10 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity {
+    @Inject
     SmartPhone smartPhone;
 
     @Override
@@ -13,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SmartPhoneComponent smartPhoneComponent = DaggerSmartPhoneComponent.create();
-        smartPhone = smartPhoneComponent.getSmartPhone();
+        //smartPhone = smartPhoneComponent.getSmartPhone();
+        smartPhoneComponent.inject(this);
 
         smartPhone.makeACall();
     }

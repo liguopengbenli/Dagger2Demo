@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
         //SmartPhoneComponent smartPhoneComponent = DaggerSmartPhoneComponent.create();
         //smartPhone = smartPhoneComponent.getSmartPhone();
-        SmartPhoneComponent smartPhoneComponent = DaggerSmartPhoneComponent.builder()
+        /*SmartPhoneComponent smartPhoneComponent = DaggerSmartPhoneComponent.builder()
                                                                             .memoryCardModule(new MemoryCardModule(100))
-                                                                            .build();
+                                                                            .build();*/
 
-        smartPhoneComponent.inject(this);
+        //smartPhoneComponent.inject(this);
+        App.getApp().getSmartPhoneComponent().inject(this);
 
         smartPhone.makeACall();
     }
